@@ -1,5 +1,5 @@
 var x=document.getElementsByClassName("day");
-for(var i =0;i<x.length;i++){
+for(var i = 0; i < x.length; i++){
     if(x[i].getAttribute("fill")== "#ebedf0"){
       //  x[i].setAttribute("fill","#000");
     }    
