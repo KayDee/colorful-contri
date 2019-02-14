@@ -1,4 +1,14 @@
-var x=document.getElementsByClassName("day");
+// changeColor.onclick = function(element) {
+    let color = "#f00";
+    chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
+        console.log(tabs)
+      chrome.tabs.executeScript(
+          tabs[0].id,
+          {code: xx});
+    });
+//   };
+
+var xx = `var x=document.getElementsByClassName("day");
 for(var i = 0; i < x.length; i++){
     if(x[i].getAttribute("fill")== "#ebedf0"){
       //  x[i].setAttribute("fill","#000");
@@ -36,7 +46,7 @@ for(var i =0;i<y.length;i++)
     else if(p=="rgb(25, 97, 39)"){
         y[i].style["background-color"]="#330033";
     }
-}
+}`
 /*
 #E0CCE0
 #BA49BA
