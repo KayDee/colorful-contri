@@ -12,16 +12,15 @@ document.addEventListener('DOMContentLoaded', function(){
     var x=document.getElementsByClassName("day");
     for(var i = 0; i < x.length; i++){
         if(x[i].getAttribute("fill")== "#ebedf0"){
-        //  x[i].setAttribute("fill","#000");
         }    
         else if(x[i].getAttribute("fill")=="#c6e48b"){
             x[i].setAttribute("fill","#E0CCE0");
         }
         else if(x[i].getAttribute("fill")=="#7bc96f"){
-            x[i].setAttribute("fill","#BA49BA");
+            x[i].setAttribute("fill","#C05BC0");
         }
         else if(x[i].getAttribute("fill")=="#239a3b"){
-            x[i].setAttribute("fill","#660066");
+            x[i].setAttribute("fill","#800080");
         }
         else if(x[i].getAttribute("fill")=="#196127"){
             x[i].setAttribute("fill","#330033");
@@ -39,10 +38,10 @@ document.addEventListener('DOMContentLoaded', function(){
             y[i].style["background-color"]=("#E0CCE0");
         }
         else if(p=="rgb(123, 201, 111)"){
-            y[i].style["background-color"]="#BA49BA";
+            y[i].style["background-color"]="#C05BC0";
         }
         else if(p=="rgb(35, 154, 59)"){
-            y[i].style["background-color"]="#660066";
+            y[i].style["background-color"]="#800080";
         }
         else if(p=="rgb(25, 97, 39)"){
             y[i].style["background-color"]="#330033";
@@ -51,8 +50,8 @@ document.addEventListener('DOMContentLoaded', function(){
 })
 /*
 #E0CCE0
-#BA49BA
-#660066
+#C05BC0
+#800080
 #330033
 
 rgb(235, 237, 240)
