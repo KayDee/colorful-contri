@@ -49,20 +49,17 @@ document.addEventListener('DOMContentLoaded', function(){
     }
 })
 /*
-#E0CCE0
-#C05BC0
-#800080
-#330033
-
 rgb(235, 237, 240)
 rgb(198, 228, 139)
 rgb(123, 201, 111)
 rgb(35, 154, 59)
 rgb(25, 97, 39)
 
-.legend li{
 
-}
+#E0CCE0
+#C05BC0
+#800080
+#330033
 
 
 */
