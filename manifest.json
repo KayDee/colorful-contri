@@ -1,13 +1,11 @@
 {
-  "name": "GitExtension",
+  "name": "Colorful Contri",
   "version": "1.0",
-  "description": "Github Extension!",
+  "description": "An extension to not get bored with the green contibutions on github!",
   "manifest_version": 2,
   "permissions":["activeTab", "declarativeContent", "https://github.com/"],
   "background": {
-      "scripts": [
-          "background.js"
-      ],
-      "persistent": false
+    "scripts": ["background.js"],
+    "persistent": false
   }
 }
