@@ -16,45 +16,50 @@ const COLORS = [
   ['#FEE858', '#F4BC35', '#E48734', '#020014'],
 ]
 let selected = COLORS[Math.floor(Math.random() * COLORS.length)]
-
+// console.log(selected)
 document.addEventListener('DOMContentLoaded', (event) => {
   let x = document.getElementsByClassName('day')
   for(let i = 0; i < x.length; i++){
-    if(x[i].getAttribute('fill') == '#ebedf0'){
-      //  Do nothing
-    }    
-    else if(x[i].getAttribute('fill') == '#c6e48b'){
-      x[i].setAttribute('fill', selected[0])
+
+    switch(x[i].getAttribute('fill')){
+      case '#ebedf0':
+      //  Do nothing    
+      case '#c6e48b':
+        x[i].setAttribute('fill', selected[0])
+        break
+      case '#7bc96f':
+        x[i].setAttribute('fill', selected[1])
+        break
+      case '#239a3b':
+        x[i].setAttribute('fill', selected[2])
+        break
+      case '#196127':
+        x[i].setAttribute('fill', selected[3])
+        break
     }
-    else if(x[i].getAttribute('fill') == '#7bc96f'){
-      x[i].setAttribute('fill', selected[1])
-    }
-    else if(x[i].getAttribute('fill') == '#239a3b'){
-      x[i].setAttribute('fill', selected[2])
-    }
-    else if(x[i].getAttribute('fill') == '#196127'){
-      x[i].setAttribute('fill', selected[3])
-    }
+
   }
   let y = document.querySelectorAll('.legend li')
   for(let i = 0; i < y.length; i++){
     let p = y[i].style['background-color']
 
-    if(p == 'rgb(235, 237, 240)'){
+    switch(p){
+      case 'rgb(235, 237, 240)':
       //  Do nothing
-    }    
-    else if(p == 'rgb(198, 228, 139)'){
-      y[i].style['background-color'] = selected[0]
+      case'rgb(198, 228, 139)':
+        y[i].style['background-color'] = selected[0]
+        break
+      case'rgb(123, 201, 111)':
+        y[i].style['background-color'] = selected[1]
+        break
+      case'rgb(35, 154, 59)':
+        y[i].style['background-color'] = selected[2]
+        break
+      case'rgb(25, 97, 39)':
+        y[i].style['background-color'] = selected[3]
+        break
     }
-    else if(p == 'rgb(123, 201, 111)'){
-      y[i].style['background-color'] = selected[1]
-    }
-    else if(p == 'rgb(35, 154, 59)'){
-      y[i].style['background-color'] = selected[2]
-    }
-    else if(p == 'rgb(25, 97, 39)'){
-      y[i].style['background-color'] = selected[3]
-    }
+    
   }
 
 })
