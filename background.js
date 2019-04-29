@@ -6,7 +6,7 @@ chrome.runtime.onInstalled.addListener(function (details) {
       })
       ],
       actions: [
-        new chrome.declarativeContent.RequestContentScript({"js": ['index.js']})
+        new chrome.declarativeContent.RequestContentScript({"js": ['three.min.js', 'index.js']})
       ]
     }])
   })
